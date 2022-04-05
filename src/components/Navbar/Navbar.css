@@ -67,7 +67,7 @@
   cursor: pointer;
 }
 .nav-list li a:hover {
-  color: var(--bs-white);
+  color: var(--bs-white) !important;
 }
 
 .menu-icon {
@@ -102,10 +102,11 @@
   right: 0;
   transform: translateX(100%);
   transition: all 400ms;
-  padding: 35px;
+  padding: 27px;
   text-align: initial;
   height: 100vh;
   top: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .inactive {
   transform: translate(0%) !important;
@@ -132,4 +133,103 @@
 
 .class-list li:hover {
   color: #f85a40;
+}
+.icon-down {
+  font-size: 30px;
+  float: right;
+}
+/* css for dropdown menu */
+#drop-menu-1 {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  border: none;
+  margin-left: 0px;
+  list-style-type: none;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.Active-one {
+  display: block !important;
+}
+#sub-menu {
+  list-style-type: none;
+  padding-left: 20px;
+  display: none;
+}
+.Active-two {
+  display: block !important;
+}
+
+#icon-down {
+  font-size: 30px;
+  float: right;
+  transition: all 250ms;
+}
+.icon-active {
+  transform: rotate(180deg);
+}
+
+/* menu drop css */
+#menu-drop-hover {
+  position: absolute;
+  right: 290px;
+  top: 50%;
+  /* display: none; */
+  visibility: hidden;
+  background: white;
+  list-style-type: none;
+  color: black;
+  padding: 15px;
+  width: 160px;
+  text-align: initial;
+}
+
+#menu-drop-hover li {
+  padding: 5px;
+}
+.hover-element {
+  padding-bottom: 120px;
+}
+
+.hover-element:hover + #menu-drop-hover {
+  transition: all ease-in-out 180ms;
+  z-index: 2;
+  visibility: visible;
+  top: 35%;
+}
+#menu-drop-hover:focus {
+  visibility: visible;
+  top: 35%;
+}
+#menu-drop-hover:hover {
+  visibility: visible;
+  top: 35%;
+}
+
+/* sub-menu drop css */
+.sub-menu-drop {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  list-style-type: none;
+  background: white;
+  right: 150px;
+  top: 60%;
+  padding: 15px;
+  width: 140px;
+}
+.sub-menu-drop li {
+  padding: 5px;
+}
+
+.sub-hover-element:hover + .sub-menu-drop {
+  visibility: visible;
+  transition: all ease-in-out 180ms;
+}
+.sub-menu-hover:hover {
+  visibility: visible;
+}
+.sub-hover-element:hover {
+  color: blue;
 }

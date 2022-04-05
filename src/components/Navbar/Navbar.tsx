@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { GrClose } from "react-icons/gr";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   const [inActive, setinActive] = useState(false);
-
-  // const OpenSidebar = () => {
-  //   setinActive(true);
-  //   console.log("opened");
-  // };
-  // const CloseSidebar = () => {
-  //   setinActive(false);
-  //   console.log("closed");
-  // };
+  const [menuOne, setmenuOne] = useState(false);
+  const [menuTwo, setmenuTwo] = useState(false);
 
   return (
     <div className="site-nav">
@@ -24,7 +18,7 @@ const Navbar = () => {
         <li>
           <a>Home</a>
         </li>
-        <li>
+        <li className="hover-element">
           <a>
             Dropdown
             <FontAwesomeIcon
@@ -33,6 +27,12 @@ const Navbar = () => {
             />
           </a>
         </li>
+        {/* creating dropdown  */}
+        <ul id="menu-drop-hover">
+          <li>Menu 1</li>
+          <li className="sub-hover-element">Menu 2</li>
+          <li>Menu 3</li>
+        </ul>
         <li>
           <a>Services</a>
         </li>
@@ -46,6 +46,11 @@ const Navbar = () => {
           <a>Contact Us</a>
         </li>
       </ul>
+      <ul className="sub-menu-drop">
+        <li>sub Menu 1</li>
+        <li>sub Menu 2</li>
+        <li>sub Menu 3</li>
+      </ul>
       <a className="menu-icon">
         <FontAwesomeIcon icon={faBars} onClick={() => setinActive(!inActive)} />
       </a>
@@ -55,7 +60,29 @@ const Navbar = () => {
         </div>
         <ul className="class-list">
           <li>home</li>
-          <li>dropdown</li>
+          <li onClick={() => setmenuOne(!menuOne)}>
+            dropdown{" "}
+            <RiArrowDropDownLine
+              id="icon-down"
+              className={menuOne ? "icon-active" : ""}
+            />
+          </li>
+          <ul id="drop-menu-1" className={menuOne ? "Active-one" : ""}>
+            <li>Menu 1</li>
+            <li onClick={() => setmenuTwo(!menuTwo)}>
+              Menu 2{" "}
+              <RiArrowDropDownLine
+                id="icon-down"
+                className={menuTwo ? "icon-active" : ""}
+              />
+            </li>
+            <ul id="sub-menu" className={menuTwo ? "Active-two" : ""}>
+              <li>sub menu 1</li>
+              <li>sub menu 2</li>
+              <li>sub menu 3</li>
+            </ul>
+            <li>Menu 3</li>
+          </ul>
           <li>services </li>
           <li>blog</li>
           <li>about</li>
