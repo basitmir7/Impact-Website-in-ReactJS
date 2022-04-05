@@ -87,5 +87,49 @@
   }
   .menu-icon:hover {
     transform: scaleY(0.8);
+    color: #fff;
   }
+}
+
+/* sidebar style */
+#side-bar {
+  /* display: none; */
+  position: fixed;
+  z-index: 4;
+  width: 300px;
+  background: #fafafa;
+  line-height: 1.8;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 400ms;
+  padding: 35px;
+  text-align: initial;
+  height: 100vh;
+  top: 0;
+}
+.inactive {
+  transform: translate(0%) !important;
+  /* display: block !important; */
+}
+.class-list {
+  list-style-type: none;
+  margin-top: 36px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+.class-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+.icon-x {
+  font-size: 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 16px;
+}
+
+.class-list li:hover {
+  color: #f85a40;
 }

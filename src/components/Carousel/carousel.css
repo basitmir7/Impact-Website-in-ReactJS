@@ -1,0 +1,31 @@
+.slider-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.slide_container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 707px;
+}
+.swiper-section {
+  background: #fafafa;
+}
+.carousel-main {
+  background: #fafafa;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 12px !important;
+  font-weight: bolder;
+  color: black;
+}
+.quote {
+  font-family: "Georgia", serif;
+}
+.swiper-wrapper {
+  transition: ease-in-out 200ms;
+}
+.fw-bold {
+  color: black;
+}

@@ -1,9 +1,20 @@
-import React from "react";
-import { FC } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+import { GrClose } from "react-icons/gr";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faBars } from "@fortawesome/free-solid-svg-icons";
-const Navbar: FC = () => {
+const Navbar = () => {
+  const [inActive, setinActive] = useState(false);
+
+  // const OpenSidebar = () => {
+  //   setinActive(true);
+  //   console.log("opened");
+  // };
+  // const CloseSidebar = () => {
+  //   setinActive(false);
+  //   console.log("closed");
+  // };
+
   return (
     <div className="site-nav">
       <h2 className="navigation-header">
@@ -36,8 +47,21 @@ const Navbar: FC = () => {
         </li>
       </ul>
       <a className="menu-icon">
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={faBars} onClick={() => setinActive(!inActive)} />
       </a>
+      <div id="side-bar" className={inActive ? "inactive" : ""}>
+        <div className="Close-icon">
+          <GrClose className="icon-x" onClick={() => setinActive(!inActive)} />
+        </div>
+        <ul className="class-list">
+          <li>home</li>
+          <li>dropdown</li>
+          <li>services </li>
+          <li>blog</li>
+          <li>about</li>
+          <li>contact us</li>
+        </ul>
+      </div>
     </div>
   );
 };

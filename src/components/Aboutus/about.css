@@ -1,0 +1,99 @@
+.container,
+.py-5 {
+  background: #fff;
+}
+.logo-images {
+  width: 50px;
+  height: 50px;
+}
+.pb-5 {
+  padding-top: 40px;
+}
+.btn {
+  background: #f85a40;
+  padding: 13px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.tick::before {
+  content: "\2713";
+  font-size: 20px;
+  left: 4.2rem;
+  /* top: -5px; */
+  color: #f85a40;
+  font-family: "icomoon";
+}
+/* modal css */
+.modals {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  z-index: 6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.modals::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cls_button {
+  font-size: 70px;
+  color: black;
+  display: grid;
+  place-items: center;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cls_button::before {
+  content: "";
+  display: inline-block;
+  border-left: 12px solid;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  margin-right: -0.08em;
+}
+
+.video {
+  width: 880px;
+}
+.video iframe {
+  width: 100%;
+}
+
+.modal-cls-button,
+.modals {
+  cursor: pointer;
+}
+
+.video-outer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+@media (max-width: 600px) {
+  .video iframe {
+    height: auto;
+  }
+}

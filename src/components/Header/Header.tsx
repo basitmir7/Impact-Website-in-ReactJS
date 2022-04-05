@@ -1,6 +1,6 @@
 import React from "react";
 import { FC } from "react";
-import "./home.css";
+import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLayerGroup,
@@ -38,7 +38,7 @@ const HeaderComponent: FC = () => {
           </p>
         </div>
       </div>
-      <div className="container">
+      <div className="contain">
         <div className="box-items">
           <div className="item-logo">
             <FontAwesomeIcon icon={faLayerGroup} />

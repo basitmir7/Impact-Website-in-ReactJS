@@ -1,0 +1,14 @@
+.container {
+  background: #000;
+  text-align: initial;
+}
+.colorchang {
+  background: #000 !important;
+}
+.social-icons svg {
+  font-size: 30px;
+  background: #f85a40;
+  border-radius: 50%;
+  padding: 7px;
+  margin-right: 3px;
+}
