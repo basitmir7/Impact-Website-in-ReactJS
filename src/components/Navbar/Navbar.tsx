@@ -12,14 +12,14 @@ const Navbar = () => {
   return (
     <div className="site-nav">
       <h2 className="navigation-header">
-        <a>Impact</a>
+        <a href="#">Impact</a>
       </h2>
       <ul className="nav-list">
         <li>
-          <a>Home</a>
+          <a href="#">Home</a>
         </li>
         <li className="hover-element">
-          <a>
+          <a href="#">
             Dropdown
             <FontAwesomeIcon
               icon={faChevronDown}
@@ -48,20 +48,20 @@ const Navbar = () => {
           <li>Menu three</li>
         </ul>
         <li>
-          <a>Services</a>
+          <a href="#">Services</a>
         </li>
         <li>
-          <a>Blog</a>
+          <a href="#">Blog</a>
         </li>
         <li>
-          <a>About</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a>Contact Us</a>
+          <a href="#">Contact Us</a>
         </li>
       </ul>
 
-      <a className="menu-icon">
+      <a className="menu-icon" href="#">
         <FontAwesomeIcon icon={faBars} onClick={() => setinActive(!inActive)} />
       </a>
       <div id="side-bar" className={inActive ? "inactive" : ""}>

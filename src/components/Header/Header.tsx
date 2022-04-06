@@ -32,7 +32,9 @@ const HeaderComponent = () => {
             ullam minima quo, consequuntur.
           </p>
           <p>
-            <a className="button-intro">Get in touch</a>
+            <a href="#" className="button-intro">
+              Get in touch
+            </a>
           </p>
         </div>
       </div>
