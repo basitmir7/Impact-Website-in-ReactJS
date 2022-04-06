@@ -78,20 +78,20 @@ const Navbar = () => {
             />
           </li>
           <ul id="drop-menu-1" className={menuOne ? "Active-one" : ""}>
-            <li>Menu 1</li>
+            <li>Menu One</li>
             <li onClick={() => setmenuTwo(!menuTwo)}>
-              Menu 2{" "}
+              Menu two{" "}
               <RiArrowDropDownLine
                 id="icon-down"
                 className={menuTwo ? "icon-active" : ""}
               />
             </li>
             <ul id="sub-menu" className={menuTwo ? "Active-two" : ""}>
-              <li>sub menu 1</li>
-              <li>sub menu 2</li>
-              <li>sub menu 3</li>
+              <li>sub menu one</li>
+              <li>sub menu two</li>
+              <li>sub menu three</li>
             </ul>
-            <li>Menu 3</li>
+            <li>Menu three</li>
           </ul>
           <li>services </li>
           <li>blog</li>
