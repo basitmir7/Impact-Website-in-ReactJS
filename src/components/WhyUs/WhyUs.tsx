@@ -37,7 +37,7 @@ const WhyusSection = () => {
           </div>
         </div>
         <div className="whyus-img">
-          <img src={aboutus} alt="no image" />
+          <img src={aboutus} alt="notfound" />
         </div>
       </div>
     </div>
