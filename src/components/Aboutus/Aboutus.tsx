@@ -108,7 +108,7 @@ const AboutUs = () => {
                 ) : null}
               </div>
               <div className="col-lg-5 order-lg-2 order-1">
-                <div className="ps-0 ps-lg-5 py-5 ms-lg-5 ms-0">
+                <div className="ps-0 ps-lg-5 ms-lg-5 ms-0">
                   <h2 className="fw-bold">Get Started with Impact</h2>
                   <p>
                     Labore id odit sit optio, voluptas sequi nobis aliquid

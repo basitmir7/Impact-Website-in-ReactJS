@@ -32,7 +32,7 @@
 }
 .site-nav {
   padding-top: 32px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   width: 100%;
   position: absolute;
   top: 0;
@@ -173,16 +173,25 @@
 /* menu drop css */
 #menu-drop-hover {
   position: absolute;
-  right: 290px;
+  right: 283px;
   top: 50%;
   /* display: none; */
   visibility: hidden;
   background: white;
   list-style-type: none;
   color: black;
-  padding: 15px;
-  width: 160px;
+  padding-top: 15px;
+  padding-bottom: 22px;
+  width: 184px;
   text-align: initial;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: top ease-in-out 180ms;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+#menu-drop-hover li:hover {
+  color: #f85a40;
+  cursor: pointer;
 }
 
 #menu-drop-hover li {
@@ -193,7 +202,6 @@
 }
 
 .hover-element:hover + #menu-drop-hover {
-  transition: all ease-in-out 180ms;
   z-index: 2;
   visibility: visible;
   top: 35%;
@@ -208,28 +216,37 @@
 }
 
 /* sub-menu drop css */
-.sub-menu-drop {
-  display: block;
+#sub-menu-drop {
+  /* display: block; */
   visibility: hidden;
   position: absolute;
   list-style-type: none;
   background: white;
-  right: 150px;
-  top: 60%;
+  right: -155px;
+  top: 85%;
   padding: 15px;
-  width: 140px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 160px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: top ease-in-out 180ms;
+  text-transform: capitalize;
 }
-.sub-menu-drop li {
+#sub-menu-drop li {
   padding: 5px;
 }
 
-.sub-hover-element:hover + .sub-menu-drop {
+.sub-hover-li:hover + #sub-menu-drop {
   visibility: visible;
-  transition: all ease-in-out 180ms;
+
+  z-index: 3;
+  top: 40%;
 }
-.sub-menu-hover:hover {
+#sub-menu-drop:hover {
   visibility: visible;
+  top: 40%;
 }
-.sub-hover-element:hover {
-  color: blue;
+#sub-menu-drop:focus {
+  visibility: visible;
+  top: 40%;
 }

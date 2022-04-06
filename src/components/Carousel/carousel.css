@@ -22,9 +22,11 @@
 }
 .quote {
   font-family: "Georgia", serif;
+  font-size: 18px;
+  line-height: 1.6;
 }
 .swiper-wrapper {
-  transition: ease-in-out 200ms;
+  transition: all ease-in-out 150ms;
 }
 .fw-bold {
   color: black;

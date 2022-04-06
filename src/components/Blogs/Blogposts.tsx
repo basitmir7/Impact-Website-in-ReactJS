@@ -31,7 +31,7 @@ const Blog = ({ img }: { img: string }) => {
 
 const BlogPosts = () => {
   return (
-    <div className="py-5">
+    <div className="py-5" style={{ paddingTop: "6rem" }}>
       <div className="container py-5">
         <div className="text-center">
           <h3 className="fw-bold">Blog Posts</h3>

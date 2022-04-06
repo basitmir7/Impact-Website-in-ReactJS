@@ -23,15 +23,29 @@ const Navbar = () => {
             Dropdown
             <FontAwesomeIcon
               icon={faChevronDown}
-              style={{ marginLeft: "4px" }}
+              style={{ marginLeft: "4px", fontSize: "10px" }}
             />
           </a>
         </li>
         {/* creating dropdown  */}
         <ul id="menu-drop-hover">
-          <li>Menu 1</li>
-          <li className="sub-hover-element">Menu 2</li>
-          <li>Menu 3</li>
+          <li>Menu one</li>
+          <li className="sub-hover-li">
+            Menu two
+            <RiArrowDropDownLine
+              style={{
+                float: "right",
+                fontSize: "23px",
+                transform: "rotate(-90deg)",
+              }}
+            />
+          </li>
+          <ul id="sub-menu-drop">
+            <li>sub Menu one</li>
+            <li>sub Menu two</li>
+            <li>sub Menu three</li>
+          </ul>
+          <li>Menu three</li>
         </ul>
         <li>
           <a>Services</a>
@@ -46,11 +60,7 @@ const Navbar = () => {
           <a>Contact Us</a>
         </li>
       </ul>
-      <ul className="sub-menu-drop">
-        <li>sub Menu 1</li>
-        <li>sub Menu 2</li>
-        <li>sub Menu 3</li>
-      </ul>
+
       <a className="menu-icon">
         <FontAwesomeIcon icon={faBars} onClick={() => setinActive(!inActive)} />
       </a>
