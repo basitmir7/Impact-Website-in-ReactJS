@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import { GrClose } from "react-icons/gr";
 import { RiArrowDropDownLine } from "react-icons/ri";
