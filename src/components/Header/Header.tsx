@@ -16,13 +16,13 @@ const HeaderComponent = () => {
           className="persons-1"
           style={{ float: "left", position: "relative" }}
         >
-          <img src={persons1} alt="person image 1" />
+          <img src={persons1} alt="groupic" />
         </div>
         <div
           className="persons-2"
           style={{ float: "right", position: "relative" }}
         >
-          <img src={persons2} alt="person image 2" />
+          <img src={persons2} alt="grouppic" />
         </div>
         <div className="header-intro">
           <h1>Let's growth your business with us</h1>
@@ -32,7 +32,7 @@ const HeaderComponent = () => {
             ullam minima quo, consequuntur.
           </p>
           <p>
-            <a href="#" className="button-intro">
+            <a href="/#" className="button-intro">
               Get in touch
             </a>
           </p>

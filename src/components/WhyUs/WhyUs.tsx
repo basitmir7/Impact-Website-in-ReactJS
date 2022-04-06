@@ -11,7 +11,7 @@ const WhyusSection = () => {
           <h1>Why You Should Choose Us</h1>
           <div className="feature">
             <div className="feature-logo">
-              <img src={img2} alt="no image" />
+              <img src={img2} alt="support" />
             </div>
             <div className="feature-text">
               <h3>Professional</h3>
@@ -24,7 +24,7 @@ const WhyusSection = () => {
           </div>
           <div className="feature">
             <div className="feature-logo">
-              <img src={img1} alt="no image" />
+              <img src={img1} alt="good review" />
             </div>
             <div className="feature-text">
               <h3>Good Review</h3>
