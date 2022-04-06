@@ -91,7 +91,7 @@ const AboutUs = () => {
                       <iframe
                         width="900"
                         height="600"
-                        src="https://www.youtube.com/embed/2TUza5C2uJ8"
+                        src="https://www.youtube.com/embed/KI2lsdXJQ40"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
