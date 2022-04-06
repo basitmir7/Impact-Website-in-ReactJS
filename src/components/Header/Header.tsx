@@ -1,4 +1,3 @@
-import { FC } from "react";
 import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,7 +8,7 @@ import {
 import persons1 from "../../assets/persons-group-1.png";
 import persons2 from "../../assets/persons-group-2.png";
 
-const HeaderComponent: FC = () => {
+const HeaderComponent = () => {
   return (
     <div className="header">
       <div className="section">
